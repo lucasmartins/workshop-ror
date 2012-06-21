@@ -1,0 +1,27 @@
+<h1>Empresas</h1>
+
+<table>
+  <tr>
+    <th>Razao social</th>
+    <th>Telefone</th>
+    <th>Website</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @empresas.each do |empresa| %>
+  <tr>
+    <td><%= empresa.razao_social %></td>
+    <td><%= empresa.telefone %></td>
+    <td><a href="<%= empresa.website %>"><%= empresa.website %></a></td>
+    <td><%= link_to 'Mostrar', empresa %></td>
+    <td><%= link_to 'Alterar', edit_empresa_path(empresa) %></td>
+    <td><%= link_to 'Remover', empresa, confirm: 'Tem certeza?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nova Empresa', new_empresa_path %>

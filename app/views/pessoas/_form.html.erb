@@ -1,0 +1,29 @@
+<%= form_for(@pessoa) do |f| %>
+  <% if @pessoa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pessoa.errors.count, "error") %> prohibited this pessoa from being saved:</h2>
+
+      <ul>
+      <% @pessoa.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :sexo %><br />
+    <%= select(:pessoa, :sexo, [['Masculino', 1], ['Feminino', 2]]) %>
+  </div>
+  <div class="field">
+    <%= f.label :empresa %><br />
+    <%= collection_select(:pessoa, :empresa_id, Empresa.all, :id, :razao_social) %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

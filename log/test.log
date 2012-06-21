@@ -1,0 +1,19 @@
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "empresas"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "empresas" ("razao_social", "cnpj", "telefone", "website", "descricao", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyText', '2011-11-13 05:10:16', '2011-11-13 05:10:16', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "empresas" ("razao_social", "cnpj", "telefone", "website", "descricao", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyText', '2011-11-13 05:10:16', '2011-11-13 05:10:16', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "pessoas"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "pessoas" ("nome", "sexo", "created_at", "updated_at", "id") VALUES ('MyString', 1, '2011-11-13 05:10:16', '2011-11-13 05:10:16', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "pessoas" ("nome", "sexo", "created_at", "updated_at", "id") VALUES ('MyString', 1, '2011-11-13 05:10:16', '2011-11-13 05:10:16', 298486374)
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "empresas"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "empresas" ("razao_social", "cnpj", "telefone", "website", "descricao", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyText', '2011-11-13 05:11:05', '2011-11-13 05:11:05', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "empresas" ("razao_social", "cnpj", "telefone", "website", "descricao", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyText', '2011-11-13 05:11:05', '2011-11-13 05:11:05', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "pessoas"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "pessoas" ("nome", "sexo", "created_at", "updated_at", "id") VALUES ('MyString', 1, '2011-11-13 05:11:05', '2011-11-13 05:11:05', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "pessoas" ("nome", "sexo", "created_at", "updated_at", "id") VALUES ('MyString', 1, '2011-11-13 05:11:05', '2011-11-13 05:11:05', 298486374)
+
+
+Started GET "/empresas/new" for 127.0.0.1 at 2011-11-13 03:11:06 -0200
+  Processing by EmpresasController#new as HTML
+Rendered empresas/_form.html.erb (15.3ms)
+Rendered empresas/new.html.erb within layouts/application (52.3ms)
+Completed 200 OK in 162ms (Views: 161.3ms | ActiveRecord: 0.0ms)

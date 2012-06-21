@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @pessoa.nome %>
+</p>
+
+<p>
+  <b>Sexo:</b>
+  <%= @pessoa.canonical_sexo %>
+</p>
+
+<p>
+  <b>Empresa:</b>
+  <%= @pessoa.empresa.razao_social %>
+</p>
+
+
+<%= link_to 'Edit', edit_pessoa_path(@pessoa) %> |
+<%= link_to 'Back', pessoas_path %>

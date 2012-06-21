@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crmapp</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<a href="<%= pessoas_path %>">Pessoas</a> | <a href="<%= empresas_path %>">Empresas</a> 
+</br>
+<%= yield %>
+
+</body>
+</html>
